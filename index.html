@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffc0cb;
+            text-align: center;
+        }
+        h1 {
+            color:deeppink 
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #2a7ae2;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }  
+        a:hover {
+            background: #1d5fbf;
+        }
+    </style>
     <meta charset="UTF-8">
     <title> My first webpage jaja </title>
 </head>
 <body>
-    <h1> hello world estoy tratando de hacer algo util </h1>
+    <script>
+        function mostrarHora() {
+            const ahora = new Date();
+            alert("La hora actual es: " + ahora.toLocaleDateString());
+        }
+
+    </script>
+    <button onclick="mostarlHora()"> Mostrar hora actual</button>
+    
+        <h1> hello world estoy tratando de hacer algo util </h1>
     <p> Estoy practicando para el NASA spaceapps Challenge. </p>
 
     <a href="about.html"> Ir a la pagina web sobre mi </a>
